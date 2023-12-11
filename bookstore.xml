@@ -1,48 +1,34 @@
-<?xml version="1.0"?> 
-<?xml-stylesheet type="text/xsl" href= "bookstore.xsl.xml" ?>
-<!DOCTYPE bookstore[ 
-<!ELEMENT bookstore (book*)> 
-<!ELEMENT book (bookname,bookprice,bookauthor,booknumber,pages)> 
-<!ELEMENT bookname (#PCDATA)> 
-<!ELEMENT bookprice (#PCDATA)> 
-<!ELEMENT bookauthor (#PCDATA)> 
-<!ELEMENT booknumber (#PCDATA)> 
-<!ELEMENT pages (#PCDATA)> 
-]> 
+<?xml version= "1.0" ?>
+<?xml-stylesheet type="text/xsl" href= "bookstore.xsl" ?>
+<!DOCTYPE bookstore[
+<!ELEMENT bookstore (book*)>
+<!ELEMENT book (title,author,isbn,publisher,price)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT isbn (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+]>
 <bookstore>
 <book>
-<bookname> The Taking of Jake Livingston </bookname>
-<bookauthor>Ayana Gray</bookauthor>
-<bookprice>$499</bookprice>
-<ISBN>23456</ISBN>
-<pages>500</pages>
+<title>Book1</title>
+<author>author1</author>
+<isbn>isbn1</isbn>
+<publisher>publisher1</publisher>
+<price>100</price>
 </book>
 <book>
-<bookname> All Our Hidden Gifts </bookname>
-<bookauthor>Caroline O’Donoghue</bookauthor>
-<bookprice>$400</bookprice>
-<ISBN>76156</ISBN>
-<pages>180</pages>
+<title>Book2</title>
+<author>author1</author>
+<isbn>isbn1</isbn>
+<publisher>publisher1</publisher>
+<price>200</price>
 </book>
 <book>
-<bookname>When Shadows Fall</bookname>
-<bookauthor> Sita Bramachari</bookauthor>
-<bookprice>$300</bookprice>
-<ISBN>98456</ISBN>
-<pages>300</pages>
-</book>
-<book>
-<bookname> Hawk </bookname>
-<bookauthor> James Patterson</bookauthor>
-<bookprice>$450</bookprice>
-<ISBN>12456</ISBN>
-<pages>200</pages>
-</book>
-<book>
-<bookname> Mind Your Head </bookname>
-<bookauthor> Juno Dawson</bookauthor>
-<bookprice>$350</bookprice>
-<ISBN>73456</ISBN>
-<pages>300</pages>
+<title>Book3</title>
+<author>author1</author>
+<isbn>isbn1</isbn>
+<publisher>publisher1</publisher>
+<price>300</price>
 </book>
 </bookstore>
